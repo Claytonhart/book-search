@@ -1,0 +1,38 @@
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-list-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.book-list-button {
+  width: 150px;
+  padding: 10px 21px;
+  background: #255cc4;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+  outline: 0;
+  border: 0;
+}
+
+.book-list-button:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+  .book-list-button {
+    width: 100px;
+  }
+
+  .book-list-button-container {
+    margin: 10px;
+  }
+}

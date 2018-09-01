@@ -1,0 +1,68 @@
+.book-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.book-inner-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.book-inner-container img {
+  margin-right: 30px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+}
+
+.book-info {
+  align-self: stretch;
+}
+
+.book-info p {
+  margin: 10px 0;
+}
+
+.book-info p span {
+  width: 140px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.book-info-description {
+  display: flex;
+}
+
+.book-info-description--name {
+  min-width: 140px;
+  font-weight: bold;
+}
+
+.book-title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 1150px) {
+  .book-inner-container img {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .book-inner-container img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .book-inner-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .book-info-description {
+    flex-direction: column;
+    line-height: 140%;
+  }
+}

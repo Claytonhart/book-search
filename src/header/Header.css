@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  height: 70px;
+  /* justify-content: center; */
+  align-items: center;
+  border-bottom: 1px solid #afc5ed;
+}
+
+.header-desktop {
+  justify-content: center;
+}
+
+.header-mobile {
+  justify-content: space-between;
+}
+
+.book-search-header {
+  color: #255cc4;
+}
+
+.book-search-header-mobile {
+  color: #255cc4;
+  margin-left: 10px;
+}
+
+.book-search-header-mobile span {
+  display: inline-block;
+  transform: translateX(3px);
+}
+
+.arrow-down {
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #255cc4;
+  border-right: 5px solid #255cc4;
+
+  transform: rotate(135deg) translateY(10px);
+
+  margin-right: 10px;
+}
