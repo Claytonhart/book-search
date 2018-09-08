@@ -6,7 +6,7 @@ import NotFound from "./NotFound";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/book/:bookId" component={Book} />
